@@ -11,7 +11,7 @@ html{scroll-behavior:smooth;}
 
 .overlay{background-color: #000;width: 100%;height: 100%;z-index: 1000;position: absolute;opacity: 16%;}
 .menu{text-align: center;margin: 30px;}
-.menu a{padding: 0 20px;font-size: 20px;text-decoration: none;display: inline-block;color: var(--main);display: ruby-text;}
+.menu a{padding: 0 20px;font-size: 20px;text-decoration: none;display: inline-block;color: #fff;display: ruby-text;}
 .menu a:hover{color: var(--secondary)}
 .logo {margin: 0}
 
@@ -26,8 +26,11 @@ html{scroll-behavior:smooth;}
 .header-img{padding: 13% 0;text-align: center;}
 .header-img img{width: 100%;padding: 13% 0;}
 .header-img h1{color: var(--main);}
-.header-wrap .logo img{width: 90px;margin: auto;display: block;}
+.menu .logo img{width: 90px;margin: auto;display: block;}
 
+.hero{height:50vh;background:linear-gradient(rgba(0,0,0,0.45),rgba(0,0,0,0.45)),url('../images/hero.jpg');background-size:cover;background-position:center;text-align:center;color:white;}
+.hero h1{font-family:'Bagel Fat One',cursive;font-size:5rem;margin-bottom:15px;}
+.hero p{max-width:700px;line-height:1.8;font-size:1.1rem;}
 
 .btn{display:inline-block;padding:16px 35px;background:var(--main);color:white;border-radius:50px;text-decoration:none;font-weight:600;transition:0.3s;    margin: 20px auto;display: block;width: 200px;}
 .btn:hover{transform:translateY(-3px);background:var(--secondary);}
@@ -53,6 +56,14 @@ html{scroll-behavior:smooth;}
 .flavor-content h3{margin-bottom:15px;font-size:1.5rem;}
 .flavor-content p{color:#666;line-height:1.7;}
 
+.flavor-content h3{/*position:absolute;top:0px;left:25px;*/font-size:2rem;font-weight:700;z-index:2;}
+.berries h3{color: #596983}
+.strawberry h3{color: #aa1e23}
+.mango h3{color: #fee14d}
+.peach h3{color: #d55127}
+.vanilla h3{color: #f1e2b7}
+.mint h3{color: #b8c655}
+
 /* VALUES */
 .value-card{padding:40px;border-radius:20px;background:white;box-shadow:0 10px 30px rgba(0,0,0,0.05);text-align:center;}
 .value-card h3{margin:20px 0;color:var(--main);}
@@ -61,7 +72,7 @@ html{scroll-behavior:smooth;}
 /* CTA */
 
 .cta{
-background:linear-gradient(135deg,#ff4d4d,#ff8c42);
+background:linear-gradient(135deg,var(--main),#ff8c42);
 color:white;
 text-align:center;
 border-radius:40px;
@@ -83,8 +94,21 @@ margin-bottom:30px;
 
 .cta .btn{
 background:white;
-color:#ff4d4d;
+color:var(--main);
 }
+
+
+.secret-wrap{position:relative;margin:70px 8%;padding:70px 8%;border-radius:40px;overflow:hidden;background:#050505;}
+.secret-overlay{position:absolute;inset:0;background:radial-gradient(circle at top right,rgba(255,0,80,0.18),transparent 40%);}
+.secret-container{position:relative;z-index:2;display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:60px;align-items:center;}
+.premium-label{display:inline-block;padding:10px 20px;border:1px solid rgba(255,255,255,0.2);border-radius:50px;color:var(--main);font-size:12px;letter-spacing:2px;margin-bottom:25px;}
+.secret-wrap h2{font-family:'Bagel Fat One',cursive;font-size:6rem;color:white;line-height:1;margin-bottom:20px;}
+.secret-wrap h3{color:var(--main);font-size:2rem;margin-bottom:25px;}
+.secret-wrap p{color:#bbb;line-height:1.9;margin-bottom:20px;max-width:650px;}
+.secret-wrap{display:flex;justify-content:center;}
+.secret-can{width:100%;max-width:420px;position:relative;}
+.secret-can::before{content:'';position:absolute;inset:-20px;border-radius:30px;background:linear-gradient(135deg,rgba(255,0,80,0.2),rgba(255,255,255,0.02));filter:blur(20px);}
+.secret-wrap img{position:relative;z-index:2;width:100%;border-radius:30px;box-shadow:0 20px 60px rgba(0,0,0,0.6);}
 
 /* FOOTER */
 .footer{background:#111;color:white;padding:60px 8%;text-align:center;}
