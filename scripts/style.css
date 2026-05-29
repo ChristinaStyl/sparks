@@ -8,12 +8,15 @@ html{scroll-behavior:smooth;}
     --light:#fff;
     --gray:#f5f5f5;
 }
+h1, h2, h3, h4, h5, h6 {margin-top: 0;margin-bottom: 0.8em;font-weight: 100;line-height: 1.2;}
+
 
 .overlay{background-color: #000;width: 100%;height: 100%;z-index: 1000;position: absolute;opacity: 16%;}
 .menu-wrap{position: fixed;background: #fff;width: 100%;z-index: 1000;box-shadow: 0px -8px 18px 1px #000000;}
 .menu{font-family:'Bagel Fat One',cursive;text-align: right;}
-.menu a{padding: 35px 20px;font-size: 25px;text-decoration: none;display: inline-block;color: var(--main);}
+.menu a{padding: 35px 10px;font-size: 25px;text-decoration: none;display: inline-block;color: var(--main);}
 .menu a:hover{color: var(--secondary)}
+.menu a.active{color: var(--secondary)}
 .logo {margin: 0}
 .logo img{height:90px;display: block;padding: 10px 0}
 
@@ -29,7 +32,12 @@ html{scroll-behavior:smooth;}
 .header-img img{width: 100%;padding: 13% 0;}
 .header-img h1{font-family: 'Myriad Pro';font-size: 5rem;color: #fff;font-weight: bold;font-style: italic;margin-top:80px;}
 
-.hero{height:50vh;background:linear-gradient(rgba(0,0,0,0.45),rgba(0,0,0,0.45)),url('../images/hero.jpg');background-size:cover;background-position:center;text-align:center;color:white;position: relative;top: 90px;margin-bottom: 100px;}
+.hero{height:50vh;background-size:cover;background-position:center;text-align:center;color:white;position: relative;top: 90px;margin-bottom: 80px;}
+.about-hero {background:linear-gradient(rgba(0,0,0,0.45),rgba(0,0,0,0.45)),url('../images/about_hero.jpg');}
+.flavors-hero {background:linear-gradient(rgba(0,0,0,0.45),rgba(0,0,0,0.45)),url('../images/flavors_hero.jpg');}
+.merch-hero {background:linear-gradient(rgba(0,0,0,0.45),rgba(0,0,0,0.45)),url('../images/merch_hero.jpg');}
+.contact-hero {background:linear-gradient(rgba(0,0,0,0.45),rgba(0,0,0,0.45)),url('../images/contact_hero.jpg');}
+
 .hero h1{font-family: 'Myriad Pro';font-size: 5rem;color: #fff;font-weight: bold;font-style: italic;margin-top:13%;}
 .hero p{max-width:700px;line-height:1.8;font-size:1.1rem;}
 
@@ -104,6 +112,41 @@ html{scroll-behavior:smooth;}
 .quote{margin:100px 0;padding:120px 8%;border-radius:40px;background:var(--secondary);background-size:cover;background-position:center;text-align:center;color:white;}
 .quote h2{font-size:3rem;margin-bottom:20px;}
 .quote p {max-width: 700px;margin: auto;line-height: 1.8;margin-bottom: 30px;font-size: 20px;}
+
+.promotional-wrap{background-color: var(--gray)}
+.promotional-wrap img{width: 100%;border-radius: 35px;box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);margin-top: 50px;}
+.promotional-wrap .section-intro {text-align: left;padding: 0}
+
+.accessories-wrap img{width: 100%;border-radius: 35px;box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);margin-top: 50px;}
+.accessories-wrap .section-intro {text-align: left;padding: 0}
+
+.contact-wrap{background-color: var(--gray)}
+.contact-info h2{font-size:3rem;margin-bottom:25px;}
+.contact-info p{color:#666;line-height:2;margin-bottom:40px;}
+.info-box{background:white;padding: 5px 30px;border-radius:25px;margin-bottom:25px;box-shadow:0 10px 30px rgba(0,0,0,0.05);transition:0.4s;}
+.info-box:hover{transform:translateY(-5px);}
+.info-box h3{color:var(--main);margin-bottom:10px;}
+.info-box p{margin:0;color:#555;font: 18px}
+
+.contact-form{background:white;padding:50px;border-radius:35px;box-shadow:0 15px 40px rgba(0,0,0,0.08);}
+.contact-form h2{margin-bottom:35px;font-size:2.5rem;}
+.form-group{margin-bottom:25px;}
+.form-group label{display:block;margin-bottom:10px;font-weight:600;color:#333;}
+.form-group input, .form-group textarea{width:100%;padding:18px 20px;border-radius:18px;border:1px solid #ddd;outline:none;transition:0.3s;}
+.form-group input:focus,.form-group textarea:focus{border-color:var(--main);}
+.form-group textarea{min-height:180px;resize:none;}
+
+.map-section{margin-top:80px;}
+.map{overflow:hidden;border-radius:35px;box-shadow:0 15px 40px rgba(0,0,0,0.08);}
+.map iframe{width:100%;height:405px;border:none;}
+
+.social {background: #fff;}
+.social-section h2{font-size:3rem;margin-bottom:20px;}
+.social-section p{max-width:700px;margin:auto;line-height:1.9;margin-bottom:40px;}
+.socials{display:flex;justify-content:center;gap:20px;flex-wrap:wrap;}
+.social-btn{padding:16px 32px;border-radius:50px;text-decoration:none;background:white;color:#111;font-weight:600;box-shadow:0 10px 25px rgba(0,0,0,0.06);transition:0.4s;text-decoration: none;}
+.social-btn:hover{background:var(--main);color:white;text-decoration: none;}
+
 
 /* FOOTER */
 .footer{background:#111;color:white;padding:60px 8%;text-align:center;}
