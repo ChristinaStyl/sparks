@@ -19,5 +19,11 @@ $(document).ready(function() {
 			}
 		});
 	});
-
+});
+const burger = document.getElementById("icon-menu");
+const mobileMenu = document.getElementById("mobile-menu");
+burger.addEventListener("click", () => {
+	console.log('ol');
+	burger.classList.toggle("active");
+	mobileMenu.classList.toggle("active");
 });
