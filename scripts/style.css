@@ -18,7 +18,7 @@ h1, h2, h3, h4, h5, h6 {margin-top: 0;margin-bottom: 0.8em;font-weight: 100;line
 .menu a:hover{color: var(--secondary)}
 .menu a.active{color: var(--secondary)}
 .logo {margin: 0}
-.logo img{height:90px;display: block;padding: 10px 0}
+.logo img{height:90px;display: block;padding: 10px 0;margin-top: 8px;}
 
 .header-wrap {background: url('../images/header-bg.jpg') 0 0 no-repeat;background-size: cover;height: 500px;background-position: center;    position: relative;top: 90px;margin-bottom: 100px;}
 .page-header-wrap{background: url('../images/header-bg.jpg') 0 0 no-repeat;background-size: cover;background-position: center;}
