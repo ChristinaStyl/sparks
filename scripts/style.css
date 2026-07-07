@@ -117,7 +117,7 @@ ul, ol {margin: 10px 0 10px 30px;}
 .about-wrap h2{color: var(--main)}
 
 .value-wrap{background:var(--gray);}
-.value-card{background:#fff;padding:40px;border-radius:30px;box-shadow:0 10px 30px rgba(0,0,0,0.05);transition:0.4s;margin-bottom: 30px}
+.value-card{background:#fff;padding:25px;border-radius:30px;box-shadow:0 10px 30px rgba(0,0,0,0.05);transition:0.4s;margin-bottom: 30px}
 .value-card:hover{transform:translateY(-10px);}
 .value-card h3{color:var(--main);margin-bottom:20px;font-size:25px;}
 .value-card p{color:#666;line-height:1.5;}
