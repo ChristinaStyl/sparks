@@ -45,7 +45,7 @@ ul, ol {margin: 10px 0 10px 30px;}
 .button:hover{background-image: linear-gradient(to right, var(--light), var(--dark));text-decoration: none;color: #fff;-webkit-background-clip: border-box;-webkit-text-fill-color: white;}
 .header-img{padding: 13% 0;text-align: center;}
 .header-img img{width: 100%;padding: 13% 0;}
-.header-img h1{font-family: 'Myriad Pro';font-size: 5rem;color: #fff;font-weight: bold;font-style: italic;margin-top:80px;}
+.header-img h1{font-family: 'Myriad Pro';font-size: 3rem;color: #fff;font-weight: bold;font-style: italic;margin-top:80px;}
 
 .hero{height:50vh;background-size:cover;background-position:center;text-align:center;color:white;position: relative;top: 90px;margin-bottom: 80px;}
 .about-hero {background:linear-gradient(rgba(0,0,0,0.45),rgba(0,0,0,0.45)),url('../images/about_hero.jpg');}
@@ -179,6 +179,7 @@ ul, ol {margin: 10px 0 10px 30px;}
 /* RESPONSIVE */
 
 @media (min-width: 768px){
+    .header-img h1{font-size: 5rem;}
 }
 
 @media (min-width: 992px) {
